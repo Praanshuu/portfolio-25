@@ -1,0 +1,26 @@
+.about-section {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-narrative {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.about-narrative .highlight {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-narrative {
+    font-size: 1.2rem;
+  }
+}

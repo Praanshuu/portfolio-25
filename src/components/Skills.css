@@ -1,0 +1,53 @@
+.skills-section {
+  padding: 4rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.marquee-item:hover {
+  color: var(--accent-color);
+  -webkit-text-stroke: 1px var(--accent-color);
+}
+
+.separator {
+  color: var(--accent-color);
+  margin-left: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: 3rem;
+  }
+}
