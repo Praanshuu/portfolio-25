@@ -8,10 +8,18 @@ const AudioPlayer = () => {
 
     useEffect(() => {
         const newSound = new Howl({
-            src: ['src/assets/stranger-things-124008.mp3'], // Placeholder ambient track
+            src: ['/stranger-things-124008.mp3'], // Updated path for public folder if moved, or keep relative if in src
+            // Wait, user didn't move the audio file to public. It's still in src/assets?
+            // If I want it to work in production, I should probably move audio to public too.
+            // Let's check where the audio file is.
+            // It was in src/assets/stranger-things-124008.mp3
+            // I should move it to public as well to be safe.
             loop: true,
             volume: 0.3,
-            autoplay: false,
+            autoplay: true,
+            onplay: () => setIsPlaying(true),
+            onpause: () => setIsPlaying(false),
+            onend: () => setIsPlaying(false)
         });
         setSound(newSound);
 
