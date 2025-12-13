@@ -87,3 +87,13 @@
   -webkit-text-stroke: 1px var(--accent-color);
   color: transparent;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .menu-link {
+    font-size: 2rem;
+  }
+}

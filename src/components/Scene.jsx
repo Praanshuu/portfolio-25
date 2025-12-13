@@ -29,6 +29,13 @@ const Avatar = () => {
 };
 
 const Scene = () => {
+    // Responsive logic
+    const isMobile = window.innerWidth <= 768;
+
+    // Adjust scale and position based on device
+    const scale = isMobile ? 1.4 : 2.6; // Slightly reduced desktop scale
+    const position = isMobile ? [0, -1.8, 0] : [0, -4.0, 0]; // Lowered desktop position
+
     return (
         <group position={[0, -1, 0]}>
             <ambientLight intensity={0.5} />
@@ -38,7 +45,7 @@ const Scene = () => {
             <Environment preset="city" />
 
             <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5} floatingRange={[-0.1, 0.1]}>
-                <group position={[0, -3.2, 0]} rotation={[0, -0.2, 0]} scale={2.8}>
+                <group position={position} rotation={[0, -0.2, 0]} scale={scale}>
                     <Avatar />
                 </group>
             </Float>

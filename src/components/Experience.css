@@ -67,3 +67,22 @@
   color: #ccc;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.25rem;
+  }
+
+  .company {
+    font-size: 1.1rem;
+  }
+}
