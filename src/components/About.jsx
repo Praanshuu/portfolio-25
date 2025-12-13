@@ -16,18 +16,13 @@ const About = () => {
                     >
                         <h2 className="section-title">ABOUT ME</h2>
                         <p className="about-narrative">
-                            I'm a <span className="highlight">Full Stack & Generative AI Developer</span> based in Bhilai, Chhattisgarh.
-                            My journey started with a curiosity for how things work on the web, which quickly evolved into a passion for building
-                            secure, scalable systems.
+                            Full‑stack & Gen AI developer skilled in building secure, scalable systems with <span className="highlight">JS, React, Node.js, Express</span>, and automation workflows.
                         </p>
                         <p className="about-narrative">
-                            I specialize in the <span className="highlight">MERN stack</span> and <span className="highlight">AI automation</span>.
-                            Whether it's designing a real-time EV station locator or a blockchain-based supply chain system, I love solving complex
-                            problems with clean, efficient code.
+                            Strong in <span className="highlight">backend engineering, RBAC auth, API design</span>, dashboards, and fast execution.
                         </p>
                         <p className="about-narrative">
-                            When I'm not coding, I'm exploring the latest in Agentic AI, optimizing workflows with n8n, or leading tech communities
-                            to help others learn and grow.
+                            I build clean, reliable tools that cut manual work and boost clarity.
                         </p>
                     </motion.div>
                 </div>

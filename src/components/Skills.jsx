@@ -2,8 +2,9 @@ import React from 'react';
 import './Skills.css';
 
 const skillsData = [
-    "JavaScript", "React.js", "Next.js", "Node.js", "Express", "PostgreSQL",
-    "MongoDB", "Three.js", "OpenAI API", "System Design", "Docker", "Python"
+    "JavaScript", "React.js", "Next.js", "Node.js", "Express.js", "PostgreSQL",
+    "MongoDB", "OpenAI", "Agentic AI", "n8n Workflows", "System Design",
+    "API Architecture", "Docker", "Python", "TailwindCSS", "Git/GitHub"
 ];
 
 const Skills = () => {
