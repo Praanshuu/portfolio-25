@@ -5,51 +5,45 @@ import './Certificates.css';
 const certificatesData = [
     {
         title: "NextWave CCBP 4.0 Academy",
-        issuer: "Full Stack Development",
-        description: "Intensive training in Full Stack Development, SQL, Python, and CSE Fundamentals. Built robust scalable web applications.",
+        issuer: "Full Stack, SQL, Python & CSE Fundamentals",
+        description: "Intensive training in Full Stack Development and CS fundamentals.",
         status: "Ongoing"
     },
     {
-        title: "1st Runner-Up",
-        issuer: "Hult Prize OnCampus 2023",
-        description: "Recognized for presenting a sustainable and innovative startup concept addressing global challenges.",
-        status: "Awarded"
-    },
-    {
         title: "McKinsey Forward Program",
-        issuer: "McKinsey & Company",
+        issuer: "Digital Problem Solving & Leadership",
         description: "Program focusing on Digital Problem Solving, Business Strategy, and Leadership skills.",
         status: "Ongoing"
     },
     {
-        title: "Top 30 Innovators",
-        issuer: "Hack The Space 2.0 (2024)",
-        description: "Selected as one of the top 30 innovators at SSTC Bhilai's flagship hackathon.",
-        status: "Awarded"
+        title: "Graphics Lead",
+        issuer: "TEDxBITD (2025)",
+        description: "Led a 6-member creative team for event branding and visual identity.",
+        status: "Position"
     },
     {
-        title: "Graphics Lead",
-        issuer: "TEDxBITD 2025",
-        description: "Led a 6-member creative team for event branding, visual identity, and stage design.",
-        status: "Position"
+        title: "Technical Head (2024) & General Manager (2025)",
+        issuer: "TechnoHub Club, BITD",
+        description: "Oversaw technical events, peer-learning, and team management.",
+        status: "Leadership"
+    },
+    {
+        title: "1st Runner-Up",
+        issuer: "Hult Prize OnCampus 2023",
+        description: "Recognized for sustainable startup concept.",
+        status: "Awarded"
     },
     {
         title: "Stellar Blockchain Bootcamp",
         issuer: "Blockchain Development",
-        description: "Built a decentralized lottery platform using Stellar smart contracts and frontend integration.",
+        description: "Built a decentralized lottery platform",
         status: "Completed"
     },
     {
-        title: "Technical Head & General Manager",
-        issuer: "TechnoHub Club, BITD",
-        description: "Oversaw technical events (2024) and general management (2025), fostering peer learning and team growth.",
-        status: "Leadership"
-    },
-    {
-        title: "Outskill Generative AI Workshop",
-        issuer: "AI & Automation",
-        description: "Hands-on experience with LLMs, AI tool integration, and workflow automation.",
-        status: "Completed"
+        title: "Top 30 Innovators",
+        issuer: "Hack The Space 2.0 (2024), SSTC Bhilai",
+        description: "Selected as one of the top 30 innovators.",
+        status: "Awarded"
     }
 ];
 

@@ -3,16 +3,27 @@ import './Experience.css';
 
 const experienceData = [
     {
+        role: "Software & AI Systems Intern",
+        company: "Indian Institute of Technology (IIT) Bhilai",
+        duration: "01/2026 – Present",
+        location: "Bhilai",
+        description: [
+            "Working on industrial digital-transformation systems for pre-failure alerting using data and video analytics",
+            "Working on an LMS with automated code evaluation and performance analytics",
+            "Developing full-stack dashboards for monitoring, learning, and reporting",
+            "Integrating analytics, AI feedback, and workflow automation into web systems"
+        ]
+    },
+    {
         role: "Web Development Intern",
         company: "Technonet Pvt. Ltd.",
         duration: "05/2025 – 06/2025",
         location: "Bhilai, Chhattisgarh",
         description: [
-            "Built a production-ready Certificate Verification System using React + Node.js.",
-            "Implemented RBAC authentication, session handling, and secure route protection.",
-            "Created dashboards for certificate status, logs, and event metrics.",
-            "Developed REST APIs for events, participants, verification, and admin actions.",
-            "Added global search, filters, pagination, and CRUD to streamline admin workflows."
+            "Built a production-ready Certificate Verification System using React and Node.js",
+            "Implemented RBAC authentication, secure sessions, and protected routes",
+            "Created admin dashboards for certificate status, logs, and event metrics",
+            "Developed REST APIs for events, participants, verification, and admin actions"
         ]
     }
 ];

@@ -18,7 +18,7 @@ const Hero = () => {
                     PRANSHU<br />SAHU
                 </h1>
                 <div className="hero-meta">
-                    <p className="hero-role">FULL STACK & GENERATIVE AI DEVELOPER</p>
+                    <p className="hero-role">Full-Stack Developer (AI-Powered Systems) | JavaScript · Node.js · React</p>
                     <p className="hero-location">BASED IN CHHATTISGARH, INDIA</p>
                 </div>
             </div>

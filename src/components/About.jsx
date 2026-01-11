@@ -16,13 +16,13 @@ const About = () => {
                     >
                         <h2 className="section-title">ABOUT ME</h2>
                         <p className="about-narrative">
-                            Full‑stack & Gen AI developer skilled in building secure, scalable systems with <span className="highlight">JS, React, Node.js, Express</span>, and automation workflows.
+                            Full-stack developer skilled in building secure, scalable AI-powered systems with <span className="highlight">JavaScript, React, Node.js, Express</span>, and automation workflows.
                         </p>
                         <p className="about-narrative">
-                            Strong in <span className="highlight">backend engineering, RBAC auth, API design</span>, dashboards, and fast execution.
+                            Strong in <span className="highlight">backend engineering, RBAC auth, API design, and dashboards</span>.
                         </p>
                         <p className="about-narrative">
-                            I build clean, reliable tools that cut manual work and boost clarity.
+                            I build clean, reliable tools that reduce manual work and improve decision-making.
                         </p>
                     </motion.div>
                 </div>

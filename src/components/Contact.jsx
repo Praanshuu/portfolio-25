@@ -30,6 +30,7 @@ const Contact = () => {
                             <a href="https://linkedin.com/in/pranshu-sahu" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
                             <a href="https://github.com/Praanshuu" target="_blank" rel="noopener noreferrer">GITHUB</a>
                             <a href="mailto:workspace.pranshu@gmail.com">EMAIL</a>
+                            <a href="tel:+917770914745">PHONE</a>
                         </div>
                     </div>
 
