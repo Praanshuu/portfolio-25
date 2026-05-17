@@ -1,46 +1,29 @@
 import React from 'react';
 import './Contact.css';
 
-const Contact = () => {
-    return (
-        <section id="contact" className="section contact-section">
-            <div className="container">
-                <h2 className="section-title">GET IN TOUCH</h2>
-                <div className="contact-content">
-                    <div className="contact-form-container">
-                        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-                            <div className="form-group">
-                                <input type="text" placeholder="NAME" required />
-                            </div>
-                            <div className="form-group">
-                                <input type="email" placeholder="EMAIL" required />
-                            </div>
-                            <div className="form-group">
-                                <textarea placeholder="MESSAGE" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" className="submit-btn">SEND MESSAGE</button>
-                        </form>
+const Contact = () => (
+    <section id="contact" className="section contact-section">
+        <div className="container">
+            <div className="contact-inner">
+                <div className="contact-text">
+                    <p className="label contact-eyebrow">Let's connect</p>
+                    <h2 className="contact-title">Interested in thoughtful products, behavioral systems, or meaningful digital experiences?</h2>
+                    <p className="body contact-body">
+                        I'm currently exploring opportunities in backend engineering, product development, and systems-oriented roles.
+                        Whether it's an internship, full-time opportunity, collaboration, or an interesting engineering problem — feel free to reach out.
+                    </p>
+                </div>
+                <div className="contact-actions">
+                    <a href="mailto:workspace.pranshu@gmail.com" className="btn btn-primary">Send an Email</a>
+                    <div className="contact-links">
+                        <a href="https://linkedin.com/in/pranshu-sahu" target="_blank" rel="noreferrer" className="btn btn-ghost">LinkedIn ↗</a>
+                        <a href="https://github.com/Praanshuu" target="_blank" rel="noreferrer" className="btn btn-ghost">GitHub ↗</a>
+                        <a href="/Pranshu_Sahu_Resume.pdf" download="Pranshu_Sahu_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-ghost">Resume ↗</a>
                     </div>
-
-                    <div className="contact-info">
-                        <p className="contact-text">
-                            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                        </p>
-                        <div className="social-links">
-                            <a href="https://linkedin.com/in/pranshu-sahu" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-                            <a href="https://github.com/Praanshuu" target="_blank" rel="noopener noreferrer">GITHUB</a>
-                            <a href="mailto:workspace.pranshu@gmail.com">EMAIL</a>
-                            <a href="tel:+917770914745">PHONE</a>
-                        </div>
-                    </div>
-
-                    <footer className="footer">
-                        <p>DESIGNED & BUILT BY PRANSHU SAHU</p>
-                    </footer>
                 </div>
             </div>
-        </section>
-    );
-};
+        </div>
+    </section>
+);
 
 export default Contact;

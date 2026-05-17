@@ -1,0 +1,46 @@
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.capability-card {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.capability-label {
+  color: var(--text-tertiary);
+}
+
+.capability-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.capability-item {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s ease;
+}
+
+.capability-item:last-child {
+  border-bottom: none;
+}
+
+.capability-card:hover .capability-item {
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .capabilities-grid { grid-template-columns: 1fr; }
+}

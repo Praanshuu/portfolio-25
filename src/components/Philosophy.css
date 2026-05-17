@@ -1,0 +1,27 @@
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.principle-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.principle-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.principle-body {
+  font-size: 0.925rem;
+}
+
+@media (max-width: 640px) {
+  .principles-grid { grid-template-columns: 1fr; }
+}

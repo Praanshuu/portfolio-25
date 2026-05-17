@@ -1,90 +1,43 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
+    const isDetail = location.pathname !== '/';
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    useEffect(() => {
+        const handler = () => setScrolled(window.scrollY > 30);
+        window.addEventListener('scroll', handler);
+        return () => window.removeEventListener('scroll', handler);
+    }, []);
 
-    const menuVariants = {
-        closed: {
-            x: "100%",
-            transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 40
-            }
-        },
-        open: {
-            x: "0%",
-            transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 40
-            }
-        }
-    };
-
-    const linkVariants = {
-        closed: { x: 50, opacity: 0 },
-        open: (i) => ({
-            x: 0,
-            opacity: 1,
-            transition: {
-                delay: i * 0.1
-            }
-        })
-    };
-
-    const links = [
-        { name: "Home", href: "#" },
-        { name: "About", href: "#about" },
-        { name: "Skills", href: "#skills" },
-        { name: "Experience", href: "#experience" },
-        { name: "Work", href: "#projects" },
-        { name: "Contact", href: "#contact" }
-    ];
+    const links = isDetail
+        ? [{ label: '← Back', href: '/' }]
+        : [
+            { label: 'Work', href: '#work' },
+            { label: 'Thinking', href: '#thinking' },
+            { label: 'Capabilities', href: '#capabilities' },
+            { label: 'Contact', href: '#contact' },
+          ];
 
     return (
-        <>
-            <nav className="navbar">
-                <div className="logo">PS</div>
-                <div className="menu-toggle" onClick={toggleMenu}>
-                    <div className={`hamburger ${isOpen ? 'open' : ''}`}>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </nav>
-
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        className="mobile-menu"
-                        initial="closed"
-                        animate="open"
-                        exit="closed"
-                        variants={menuVariants}
-                    >
-                        <div className="menu-links">
-                            {links.map((link, i) => (
-                                <motion.a
-                                    key={i}
-                                    href={link.href}
-                                    custom={i}
-                                    variants={linkVariants}
-                                    onClick={toggleMenu}
-                                    className="menu-link"
-                                >
-                                    {link.name}
-                                </motion.a>
-                            ))}
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </>
+        <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+            <div className="navbar-inner">
+                <Link to="/" className="navbar-logo">PS</Link>
+                <nav className="navbar-links">
+                    {links.map(link =>
+                        link.href.startsWith('#') ? (
+                            <a key={link.label} href={link.href} className="navbar-link">{link.label}</a>
+                        ) : (
+                            <Link key={link.label} to={link.href} className="navbar-link">{link.label}</Link>
+                        )
+                    )}
+                    <a href="/Pranshu_Sahu_Resume.pdf" download="Pranshu_Sahu_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-ghost navbar-cta">Resume</a>
+                </nav>
+            </div>
+        </header>
     );
 };
 

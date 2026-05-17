@@ -6,26 +6,29 @@ const About = () => {
     return (
         <section id="about" className="section about-section">
             <div className="container">
-                <div className="about-content">
-                    <motion.div
-                        className="about-text"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="section-title">ABOUT ME</h2>
+                <motion.div
+                    className="about-content"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="section-title">About</h2>
+                    <div className="about-text-blocks">
                         <p className="about-narrative">
-                            Full-stack developer skilled in building secure, scalable AI-powered systems with <span className="highlight">JavaScript, React, Node.js, Express</span>, and automation workflows.
+                            I enjoy building products where engineering, usability, and systems thinking intersect.
                         </p>
                         <p className="about-narrative">
-                            Strong in <span className="highlight">backend engineering, RBAC auth, API design, and dashboards</span>.
+                            Recently, I worked on telecom analytics and packet analysis systems at IIT Bhilai in collaboration with RADCOM, Israel.
                         </p>
                         <p className="about-narrative">
-                            I build clean, reliable tools that reduce manual work and improve decision-making.
+                            My work involved backend APIs, analytics dashboards, scalable evaluation workflows, and protocol-level monitoring systems.
                         </p>
-                    </motion.div>
-                </div>
+                        <p className="about-narrative">
+                            Long term, I want to build products and systems that improve how people think, execute, and collaborate.
+                        </p>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );
