@@ -11,7 +11,7 @@ const projects = [
         summary: 'A behavioral productivity operating system designed to bridge the gap between planning and real-world execution. Combines strategic planning, session tracking, Context-aware reflection, and behavioral analytics into a unified workflow.',
         stack: 'Next.js · Drizzle ORM · Neon Postgres · Clerk · Groq AI',
         focus: 'Systems Design · Behavioral Architecture · AI Workflows · Full-Stack',
-        link: 'https://github.com/Praanshuu',
+        link: 'https://lifeos-two-bay.vercel.app/',
         featured: true,
     },
     {
@@ -21,7 +21,7 @@ const projects = [
         summary: 'An AI-assisted website generation system that automates webpage creation using semantic similarity and modular UI assembly. Accepts user inputs, retrieves semantically relevant components via pgvector, and assembles responsive layouts automatically.',
         stack: 'React · Node.js · PostgreSQL · pgvector · Sentence Transformers',
         focus: 'Semantic Search · Vector Databases · Semantic orchestration · Component Systems',
-        link: 'https://github.com/Praanshuu',
+        link: 'https://github.com/Praanshuu/AGENTIC-ENGINE',
         featured: true,
     },
     {
